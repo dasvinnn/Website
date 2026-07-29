@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Someone Very Special</title>
+
+<!--
+  Optional online enhancement: nicer display/script fonts.
+  The whole site still works perfectly offline — if this can't load,
+  the CSS font stacks fall back to elegant system fonts automatically.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= LOADING SCREEN ================= -->
+  <div id="loading-screen">
+    <div class="loading-glow"></div>
+    <p id="loading-heart">❤</p>
+    <h1 id="loading-text">For Someone Very Special <span>❤️</span></h1>
+    <div class="loading-shimmer"></div>
+  </div>
+
+  <!-- ================= AMBIENT BACKGROUND ================= -->
+  <!-- Everything in here is generated + animated by script.js.        -->
+  <!-- pointer-events:none so nothing ever blocks clicks/photos.       -->
+  <div id="ambient-layer" aria-hidden="true">
+    <div id="light-rays"></div>
+    <div id="stars-layer"></div>
+    <div id="hearts-layer"></div>
+    <div id="sparkles-layer"></div>
+    <div id="butterflies-layer"></div>
+    <div id="petals-layer"></div>
+    <div id="waterlilies-layer"></div>
+  </div>
+
+  <!-- ================= MUSIC PLAYER ================= -->
+  <div id="music-player">
+    <audio id="bg-music" loop preload="auto">
+      <source src="music/music.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle" title="Play music" aria-label="Play or pause music">
+      <span id="music-icon">♪</span>
+    </button>
+    <input id="volume-slider" type="range" min="0" max="100" value="55" aria-label="Volume">
+  </div>
+
+  <!-- ================= MAIN EXPERIENCE ================= -->
+  <main id="experience">
+
+    <!-- ---------- Photo Journey ---------- -->
+    <section id="gallery-stage" class="stage">
+      <div id="photo-frame-wrap">
+        <div id="photo-frame">
+          <img id="photo-current" src="" alt="A cherished memory">
+          <img id="photo-next" src="" alt="">
+        </div>
+        <div id="photo-hearts"></div>
+      </div>
+      <div id="quote-box">
+        <p id="quote-text"></p>
+      </div>
+      <div id="progress-dots"></div>
+    </section>
+
+    <!-- ---------- Flower Garden Finale ---------- -->
+    <section id="garden-stage" class="stage hidden">
+      <div id="garden-flowers"></div>
+      <h2 class="garden-title">Every memory blooms into forever</h2>
+    </section>
+
+    <!-- ---------- Envelope ---------- -->
+    <section id="envelope-stage" class="stage hidden">
+      <div id="envelope" role="button" tabindex="0" aria-label="Open the letter">
+        <img src="assets/envelope.png" id="envelope-img" alt="A sealed love letter">
+        <p id="envelope-hint">Click to open</p>
+      </div>
+      <div id="letter-paper" class="hidden">
+        <div id="letter-lines"></div>
+      </div>
+    </section>
+
+    <!-- ---------- Ending ---------- -->
+    <section id="ending-stage" class="stage hidden">
+      <div id="ending-flowers"></div>
+      <h2 id="ending-text">Forever &amp; Always <span>❤️</span></h2>
+    </section>
+
+  </main>
+
+  <!-- Full-screen heart flood for the very final moment -->
+  <div id="heart-flood" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
