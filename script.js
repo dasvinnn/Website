@@ -20,6 +20,8 @@ const photos = [
   "images/photo4.jpg",
   "images/photo5.jpg",
   "images/photo6.jpg"
+  "images/photo7.jpg"
+  "images/photo8.jpg"
   // Add as many lines as you like, e.g. "images/photo7.jpg" — the
   // slideshow, dots, and preloading all update automatically.
 ];
@@ -41,14 +43,12 @@ one would ever be enough. So instead I filled this little world with
 photographs and floating hearts, hoping it might come close to how
 you make me feel.
 
-Every picture in this journey is a small proof of something big —
-that ordinary days become extraordinary the moment you're in them.
-The quiet mornings. The silly laughs. The way you look when you
-don't know I'm looking.
-
-Life gets busy, and words get lost in the noise of everyday things.
-So I wanted to slow down, just for a few minutes, and tell you
-clearly:
+Honestly I would love to thank you for dealing with me
+throughout this whole time, I can never thank you enough
+please forgive me for all the things I've did before and for being
+the most amazing person in the whole wide world 
+and thank you for 489 days of love you've given gosh I wanna be in
+love with you for inifinity
 
 You are my favorite person.
 You are my softest place to land.
@@ -57,7 +57,7 @@ You are my "for always."
 Thank you for choosing me, again and again, on the easy days and the
 hard ones. Thank you for being my home.
 
-Forever yours.
+Forever yours. Happy July Baby!!
 `;
 
 /* =====================================================================
